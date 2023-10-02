@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="https://kit.fontawesome.com/150f0edf71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form>
+        <div class="container" style="margin-top: 15px;">
+            <div class="row center">
+                <div class="col2" style="background-color: rgb(177, 173, 166)">
+                    <span>
+                        <!-- <i class="fa-light fa-notes in-text"></i> -->
+                        <i class="fa-solid fa-note-sticky in-text"></i>
+                        <!-- <i class="fa-solid fa-plus in-text"></i> -->
+                    </span>
+
+                    <input type="text" id="new-task" class="input" 
+                        placeholder="Enter new task" style="border: none;outline: none;outline-style: none;border-color: transparent;background-color: rgb(177, 173, 166);">
+                    <span>
+                        <i class="fa-solid fa-plus in-text" id="add-task-button"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="row center" style="margin-top: 23px;">
+                <div class="col" onclick="callCompleteAll()">
+                    <i class="fa-sharp fa-solid fa-check-double"></i> Complete all tasks
+                </div>
+                <div class="col" onclick="clearTask()">
+                    <span>Clear tasks </span> <span><i class="fa-solid fa-delete-left"></i></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </form>
+    <hr>
+    <div class="container">
+        <div class="row center">
+            <div>
+                <span> <span id="count">0</span> tasks left</span>
+            </div>
+            <div >
+                <span>All</span>
+                <span>Uncompleted</span>
+                <span>Completed</span>
+            </div>
+
+        </div>
+    </div>
+    <ul id="task-list"></ul>
+    <script src="./index.js"></script>
+</body>
+
+</html>
