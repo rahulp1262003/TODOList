@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 70%;
+}
+
+button[type="button"] {
+    width: 25%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#task-list {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#task-list li {
+    list-style-type: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+.center {
+    justify-content: space-between !important
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x))
+}
+
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 80%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    cursor: pointer;
+    padding: 0.5rem;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    border-radius: 8px;
+}
+
+.col:hover{
+    background-color: rgb(220, 220, 220);
+    transition: all 0.4s ease-in-out;
+}
+
+.col2 {
+    flex: 0 0 auto;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+.in-text {
+    display: flex;
+    align-items: center;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--bs-tertiary-bg);
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius)
+}
+.align{
+    align-items: end;
+}
+
+.in-text{
+    background: aliceblue;
+    border-radius: 2rem;
+    width: 1rem;
+    padding: 1rem;
+}
